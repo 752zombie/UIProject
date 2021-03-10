@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>front-page</title>
+    <link href="frontPage.css" rel="stylesheet">
 </head>
 <body>
 
-     <h1> Lets eat all the food </h1>
+<main>
 
+    <form class="signIn" action="/signin" method="get">
+        <label for="signIn"> Post food offer here </label>
+    <button type="submit" class="firmSignIn" id="signIn"> Log in </button>
+    </form>
+
+
+
+    <h1> Welcome </h1>
+    <h2> Get your food cheaper and quicker</h2>
+
+    <img class="food" src="https://csr.dk/sites/default/files/styles/2400px/public/116433646_l.jpg?itok=Di7Lu0YQ"
+         alt="Picture of food">
+
+
+    <ul th:each="postBuilder : ${postBuilder}">
+        <li th:text="${postBuilder}"></li>
+    </ul>
+
+
+</main>
 </body>
+
+            <footer>
+                       <p class="Information"> Contact: foodwaste@gmail.com </p>
+                       <p2 class="copyright">&copy; 2017–2021</p2>
+            </footer>
+
 </html>

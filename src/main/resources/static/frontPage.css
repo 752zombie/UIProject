@@ -1,0 +1,59 @@
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: beige;
+}
+
+.signIn {
+
+    margin-left: 1400px;
+
+}
+
+button {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+
+h1 {
+    margin-left: 680px;
+    color: green;
+}
+
+h2 {
+    margin-left: 590px;
+    font-size: 20px;
+
+}
+
+.food {
+    margin-left: 450px;
+    height: 400px;
+    width: auto;
+}
+
+
+footer {
+    background: #d6d6d6;
+    position: absolute;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clear: both;
+}
+
+
