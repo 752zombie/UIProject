@@ -16,7 +16,7 @@
 
 
 
-    <h1> Welcome </h1>
+    <h1 id="greeting"> Welcome </h1>
     <h2> Get your food cheaper and quicker</h2>
 
     <img class="food" src="https://csr.dk/sites/default/files/styles/2400px/public/116433646_l.jpg?itok=Di7Lu0YQ"
@@ -24,7 +24,14 @@
 
 
     <ul th:each="post : ${posts}">
-        <li th:text="${post.title}"></li>
+        <li>
+            <div class="post">
+                <h1 class="post-title" th:text="${post.title}"></h1>
+                <span class="post-description" th:text="${post.description}"></span><br>
+                <span class="post-firm" th:text="${post.firm}"></span><br>
+                <span class="post-address" th:text="${post.address}"></span><br>
+            </div>
+        </li>
     </ul>
 
 

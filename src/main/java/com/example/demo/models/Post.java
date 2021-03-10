@@ -1,11 +1,11 @@
 package com.example.demo.models;
 
 public class Post {
-    String foodType;
-    String description;
-    String address;
-    String firm;
-    String title;
+    private String foodType;
+    private String description;
+    private String address;
+    private String firm;
+    private String title;
 
 
     public Post(String foodType, String description, String address, String firm, String title) {
