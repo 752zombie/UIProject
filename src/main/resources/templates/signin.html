@@ -5,7 +5,7 @@
 
     <title>Sign in page</title>
 
-    <link href="../static/signin.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
 </head>
 <body>
 
@@ -14,12 +14,12 @@
     <img class="food" src="https://csr.dk/sites/default/files/styles/2400px/public/116433646_l.jpg?itok=Di7Lu0YQ"
          alt="Picture of food">
 
-    <form action="HVOR SKAL DEN LINKE TIL?" method="post">
+    <form action="/getTheInfo" method="post">
         <h1>Please sign in</h1>
         <label for="inputEmail" class="email-input">Email address</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email address" required>
+        <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email address" required>
         <label for="inputPassword" class="password-input">Password</label>
-        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+        <input type="password" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password" required>
 
         <div class="checkbox">
             <label>
