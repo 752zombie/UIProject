@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MainController {
 
-@GetMapping("/")
-    @ResponseBody
-    public String index(){
+@GetMapping("/NoWaste")
+
+    public String frontPage(){
 
 
-    return "hello";
+    return "frontPage.html";
 }
 
 @GetMapping("/signin")
