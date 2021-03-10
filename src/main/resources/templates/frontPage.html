@@ -8,7 +8,7 @@
 <body>
 
 <main>
-    <div th:if="${!session.isEmpty()}">
+    <div th:if="${session.user != null}">
         <p>User is signed in</p>
         <form class="signOut" action="/sign-out" method="get">
             <label for="signOutButton"> Post food offer here </label>
@@ -16,7 +16,7 @@
         </form>
     </div>
 
-    <div th:unless="${!session.isEmpty()}">
+    <div th:unless="${session.user != null}">
         <p>User is not signed in</p>
         <form class="signIn" action="/sign-in" method="get">
             <label for="signInButton"> Post food offer here </label>
