@@ -8,7 +8,7 @@ body {
     background-color: beige;
 }
 
-.signIn {
+.signIn, .signOut {
 
     margin-left: 1400px;
 
@@ -25,6 +25,14 @@ button {
     display: inline-block;
     font-size: 16px;
 
+}
+
+#signInButton {
+    background-color: #4CAF50;
+}
+
+#signOutButton {
+    background-color: red;
 }
 
 

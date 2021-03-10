@@ -8,11 +8,22 @@
 <body>
 
 <main>
+    <div th:if="${!session.isEmpty()}">
+        <p>User is signed in</p>
+        <form class="signOut" action="/sign-out" method="get">
+            <label for="signOutButton"> Post food offer here </label>
+            <button type="submit" class="firmSignOut" id="signOutButton"> Log out </button>
+        </form>
+    </div>
 
-    <form class="signIn" action="/signin" method="get">
-        <label for="signIn"> Post food offer here </label>
-    <button type="submit" class="firmSignIn" id="signIn"> Log in </button>
-    </form>
+    <div th:unless="${!session.isEmpty()}">
+        <p>User is not signed in</p>
+        <form class="signIn" action="/sign-in" method="get">
+            <label for="signInButton"> Post food offer here </label>
+            <button type="submit" class="firmSignIn" id="signInButton"> Log in </button>
+        </form>
+    </div>
+
 
 
 
