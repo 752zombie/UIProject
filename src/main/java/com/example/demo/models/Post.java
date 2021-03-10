@@ -5,13 +5,15 @@ public class Post {
     String description;
     String address;
     String firm;
+    String title;
 
 
-    public Post(String foodType, String description, String address, String firm) {
+    public Post(String foodType, String description, String address, String firm, String title) {
         this.foodType = foodType;
         this.description = description;
         this.address = address;
         this.firm = firm;
+        this.title = title;
     }
 
     public String getFoodType() {
@@ -28,5 +30,9 @@ public class Post {
 
     public String getFirm() {
         return firm;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }

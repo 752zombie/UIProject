@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload post</title>
+</head>
+<body>
+<form action="upload-post" method="post">
+    <label for="title">Title</label><br>
+    <input type="text" name="title" id="title" placeholder="Example title" required><br>
+
+    <label for="description">Describe additional information about the offer</label><br>
+    <input type="text" name="description" id="description" placeholder="Additional information" required><br>
+
+    <label for="address">Store location</label><br>
+    <input type="text" name="address" id="address" placeholder="Some address" required><br>
+
+    <input type="radio" id="fruit" name="food-type" value="fruit and vegetables">
+    <label for="fruit">Fruit and vegetables</label><br>
+
+    <input type="radio" id="meat" name="food-type" value="meat">
+    <label for="meat">Meat</label><br>
+
+    <input type="radio" id="ready-made" name="food-type" value="ready-made">
+    <label for="ready-made">Ready-made</label><br>
+
+    <input type="radio" id="fish" name="food-type" value="fish">
+    <label for="fish">Fish</label><br>
+
+    <button type="submit">Post offer</button>
+</form>
+</body>
+</html>

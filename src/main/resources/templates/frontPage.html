@@ -23,8 +23,8 @@
          alt="Picture of food">
 
 
-    <ul th:each="postBuilder : ${postBuilder}">
-        <li th:text="${postBuilder}"></li>
+    <ul th:each="post : ${posts}">
+        <li th:text="${post.title}"></li>
     </ul>
 
 
