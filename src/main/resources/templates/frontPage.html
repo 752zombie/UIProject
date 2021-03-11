@@ -9,17 +9,19 @@
 
 <main>
     <div th:if="${session.user != null}">
-        <p>User is signed in</p>
+
+
         <form class="signOut" action="/sign-out" method="get">
-            <label for="signOutButton"> Post food offer here </label>
             <button type="submit" class="firmSignOut" id="signOutButton"> Log out </button>
+        </form>
+
+        <form class="postOfferForm" action="/upload-post" method="get">
+            <button type="submit" class="postOffer" id="postButton"> Post offer </button>
         </form>
     </div>
 
     <div th:unless="${session.user != null}">
-        <p>User is not signed in</p>
         <form class="signIn" action="/sign-in" method="get">
-            <label for="signInButton"> Post food offer here </label>
             <button type="submit" class="firmSignIn" id="signInButton"> Log in </button>
         </form>
     </div>

@@ -26,7 +26,7 @@ public class UploadController {
         Company company = new Company(email);
         session.setAttribute("user", company);
 
-        return "redirect:/upload-post";
+        return "redirect:/";
     }
 
     @PostMapping("/upload-post")
