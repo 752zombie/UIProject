@@ -8,9 +8,13 @@ body {
     background-color: beige;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .signIn, .signOut, .postOfferForm {
 
-    margin-left: 1400px;
+    margin-left: 200%;
 
 }
 

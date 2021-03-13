@@ -15,7 +15,7 @@ import java.util.ArrayList;
 @Controller
 public class UploadController {
 
-    ArrayList<Post> posts;
+    public static ArrayList<Post> posts;
 
     public UploadController() {
         posts = new ArrayList<>();
@@ -23,7 +23,8 @@ public class UploadController {
 
     @PostMapping("/process-sign-in")
     public String processSignIn(@RequestParam("inputEmail") String email, @RequestParam("inputPassword") String password, HttpSession session) {
-        Company company = new Company(email);
+        String[] companyName = email.split("@");
+        Company company = new Company(companyName[0]);
         session.setAttribute("user", company);
 
         return "redirect:/";
