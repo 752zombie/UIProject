@@ -48,9 +48,9 @@
         <li>
             <div class="post">
                 <h1 class="post-title" th:text="${post.title}"></h1>
+                <span>Fra: </span><span class="post-firm" th:text="${post.firm}"></span><br>
+                <span>Sted: </span><span class="post-address" th:text="${post.address}"></span><br>
                 <span class="post-description" th:text="${post.description}"></span><br>
-                <span class="post-firm" th:text="${post.firm}"></span><br>
-                <span class="post-address" th:text="${post.address}"></span><br>
             </div>
         </li>
     </ul>

@@ -45,6 +45,10 @@ button {
     background-color: red;
 }
 
+.post-description {
+    background-color: white;
+}
+
 
 
 
@@ -77,6 +81,17 @@ footer {
     background-color: cadetblue;
     max-width: 200px;
     border-color: #4CAF50;
+}
+
+.post-firm {
+    font-size: 1.5em;
+}
+
+.post-title {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-width: thin;
+    text-align: center;
 }
 
 
