@@ -13,17 +13,17 @@
     <div class="options" th:if="${session.user != null}">
 
         <form class="signOut" action="/sign-out" method="get">
-            <button type="submit" class="firmSignOut" id="signOutButton"> Log out </button>
+            <button type="submit" class="firmSignOut" id="signOutButton"> Log ud </button>
         </form>
 
         <form class="postOfferForm" action="/upload-post" method="get">
-            <button type="submit" class="postOffer" id="postButton"> Post offer </button>
+            <button type="submit" class="postOffer" id="postButton"> Upload tilbud </button>
         </form>
     </div>
 
     <div class="options" th:unless="${session.user != null}">
         <form class="signIn" action="/sign-in" method="get">
-            <button type="submit" class="firmSignIn" id="signInButton"> Log in </button>
+            <button type="submit" class="firmSignIn" id="signInButton"> Log ind </button>
         </form>
     </div>
 

@@ -56,7 +56,7 @@ public class UploadController {
     @GetMapping("/not-signed-in-error")
     @ResponseBody
     public String notSignedInError() {
-        return "Error: you must be signed in before you can upload a post";
+        return "Fejl: du kan ikke lægge et tilbud ud før du er logget ind";
     }
 
 

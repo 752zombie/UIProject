@@ -6,28 +6,28 @@
 </head>
 <body>
 <form action="upload-post" method="post">
-    <label for="title">Title</label><br>
-    <input type="text" name="title" id="title" placeholder="Example title" required><br>
+    <label for="title">Titel</label><br>
+    <input type="text" name="title" id="title" placeholder="Skriv en sigende titel her" required><br>
 
-    <label for="description">Describe additional information about the offer</label><br>
-    <input type="text" name="description" id="description" placeholder="Additional information" required><br>
+    <label for="description">Beskrivelse</label><br>
+    <textarea name="description" id="description" cols="30" rows="10" placeholder="Uddybende information om tilbuddet"></textarea>
 
-    <label for="address">Store location</label><br>
-    <input type="text" name="address" id="address" placeholder="Some address" required><br>
+    <label for="address">Butik addresse</label><br>
+    <input type="text" name="address" id="address" placeholder="Hvor jeres butik er lokaliseret" required><br>
 
     <input type="radio" id="fruit" name="food-type" value="fruit and vegetables">
-    <label for="fruit">Fruit and vegetables</label><br>
+    <label for="fruit">Frugt og grønt</label><br>
 
     <input type="radio" id="meat" name="food-type" value="meat">
-    <label for="meat">Meat</label><br>
+    <label for="meat">Kød</label><br>
 
     <input type="radio" id="ready-made" name="food-type" value="ready-made">
-    <label for="ready-made">Ready-made</label><br>
+    <label for="ready-made">Færdigret</label><br>
 
     <input type="radio" id="fish" name="food-type" value="fish">
-    <label for="fish">Fish</label><br>
+    <label for="fish">Fisk</label><br>
 
-    <button type="submit">Post offer</button>
+    <button type="submit">Upload tilbud</button>
 </form>
 </body>
 </html>
