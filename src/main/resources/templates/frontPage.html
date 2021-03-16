@@ -7,9 +7,10 @@
 </head>
 <body>
 
-<main>
-    <div th:if="${session.user != null}">
-
+<nav>
+    <a href="/">Hjem</a>
+    <a href="/">Om os</a>
+    <div class="options" th:if="${session.user != null}">
 
         <form class="signOut" action="/sign-out" method="get">
             <button type="submit" class="firmSignOut" id="signOutButton"> Log out </button>
@@ -20,19 +21,24 @@
         </form>
     </div>
 
-    <div th:unless="${session.user != null}">
+    <div class="options" th:unless="${session.user != null}">
         <form class="signIn" action="/sign-in" method="get">
             <button type="submit" class="firmSignIn" id="signInButton"> Log in </button>
         </form>
     </div>
 
+</nav>
 
+<main>
 
-    <h1 id="greeting"> Velkommen </h1>
-    <h2> Få billig mad her </h2>
+    <div id="intro">
+        <h1 id="greeting"> Velkommen </h1>
+        <h2> Få billig mad her </h2>
 
-    <h3> Madspild er fortsat et stort problem i Danmark. Vi forsøger
-        ger her at blive Danmarks største bevægelse mod madspild målt på antal af gennemførte aktiviteter. Vi vil gøre en forskel!</h3>
+        <h3> Madspild er fortsat et stort problem i Danmark. Vi forsøger
+            her at blive Danmarks største bevægelse mod madspild målt på antal af gennemførte aktiviteter. Vi vil gøre en forskel!</h3>
+
+    </div>
 
     <img class="food" src="https://csr.dk/sites/default/files/styles/2400px/public/116433646_l.jpg?itok=Di7Lu0YQ"
          alt="Picture of food">
@@ -47,10 +53,6 @@
                 <span class="post-address" th:text="${post.address}"></span><br>
             </div>
         </li>
-    </ul>
-
-    <ul>
-        <li>Hej</li>
     </ul>
 
 
