@@ -7,38 +7,32 @@
 </head>
 <body>
 
-<nav>
-    <a href="/">Hjem</a>
-    <a href="/">Om os</a>
-    <div class="options" th:if="${session.user != null}">
+<main>
+    <div th:if="${session.user != null}">
+
 
         <form class="signOut" action="/sign-out" method="get">
-            <button type="submit" class="firmSignOut" id="signOutButton"> Log ud </button>
+            <button type="submit" class="firmSignOut" id="signOutButton"> Log out </button>
         </form>
 
         <form class="postOfferForm" action="/upload-post" method="get">
-            <button type="submit" class="postOffer" id="postButton"> Upload tilbud </button>
+            <button type="submit" class="postOffer" id="postButton"> Post offer </button>
         </form>
     </div>
 
-    <div class="options" th:unless="${session.user != null}">
+    <div th:unless="${session.user != null}">
         <form class="signIn" action="/sign-in" method="get">
-            <button type="submit" class="firmSignIn" id="signInButton"> Log ind </button>
+            <button type="submit" class="firmSignIn" id="signInButton"> Log in </button>
         </form>
     </div>
 
-</nav>
 
-<main>
 
-    <div id="intro">
-        <h1 id="greeting"> Velkommen </h1>
-        <h2> Få billig mad her </h2>
+    <h1 id="greeting"> Velkommen </h1>
+    <h2> Få billig mad her </h2>
 
-        <h3> Madspild er fortsat et stort problem i Danmark. Vi forsøger
-            her at blive Danmarks største bevægelse mod madspild målt på antal af gennemførte aktiviteter. Vi vil gøre en forskel!</h3>
-
-    </div>
+    <h3> Madspild er fortsat et stort problem i Danmark. Vi forsøger
+        ger her at blive Danmarks største bevægelse mod madspild målt på antal af gennemførte aktiviteter. Vi vil gøre en forskel!</h3>
 
     <img class="food" src="https://csr.dk/sites/default/files/styles/2400px/public/116433646_l.jpg?itok=Di7Lu0YQ"
          alt="Picture of food">
@@ -48,9 +42,9 @@
         <li>
             <div class="post">
                 <h1 class="post-title" th:text="${post.title}"></h1>
-                <span>Fra: </span><span class="post-firm" th:text="${post.firm}"></span><br>
-                <span>Sted: </span><span class="post-address" th:text="${post.address}"></span><br>
                 <span class="post-description" th:text="${post.description}"></span><br>
+                <span class="post-firm" th:text="${post.firm}"></span><br>
+                <span class="post-address" th:text="${post.address}"></span><br>
             </div>
         </li>
     </ul>
