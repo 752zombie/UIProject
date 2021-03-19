@@ -8,7 +8,7 @@
 <body>
 
 <main>
-    <div th:if="${session.user != null}">
+    <div class="options" th:if="${session.user != null}">
 
 
         <form class="signOut" action="/sign-out" method="get">
@@ -20,7 +20,7 @@
         </form>
     </div>
 
-    <div th:unless="${session.user != null}">
+    <div class="options" th:unless="${session.user != null}">
         <form class="signIn" action="/sign-in" method="get">
             <button type="submit" class="firmSignIn" id="signInButton"> Log in </button>
         </form>
